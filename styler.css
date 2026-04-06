@@ -7,13 +7,14 @@
 }
 
 body {
-  background: #8a51fc;
+  background: #19181a;
 }
 
 .logo {
-  width: 300px;
+  width: 500px;
   display: block;
   margin: 20px auto;
+  background: #111010;
 }
 
 main {
@@ -50,7 +51,7 @@ input {
 }
 
 button {
-  background: green;
+  background: rgb(14, 94, 14);
   border-radius: 5px;
   width: 100%;
   border: none;
