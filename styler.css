@@ -8,28 +8,31 @@
 
 body {
   background: #19181a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .logo {
-  width: 500px;
+  width: 400px;
   display: block;
   margin: 20px auto;
-  background: #111010;
 }
 
 main {
-  width: 375px;
-  background: #ffffff;
+  width: 100%;
+  max-width: 400px;
+  background: #babebb;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  margin-top: 20px;
-  padding: 44px 24px 23px;
+  margin-top: 5px;
+  padding: 32px 24px;
 }
 
 label {
-  font-weight: 400;
+  font-weight: 700;
   font-size: 14px;
   color: #777777;
   margin-bottom: 6px;
@@ -37,7 +40,7 @@ label {
 
 select,
 input {
-  background: #ffffff;
+  background: #f7f6f8;
   border: 1px solid #bbbbbb;
   border-radius: 4px;
   height: 48px;
@@ -51,15 +54,16 @@ input {
 }
 
 button {
-  background: rgb(14, 94, 14);
+  background: rgb(1, 17, 6);
   border-radius: 5px;
   width: 100%;
   border: none;
   height: 48px;
-  color: #ffffff;
+  color: #04854b;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
+  margin-bottom: 25px;
 }
 
 button:hover {
@@ -70,14 +74,30 @@ button:active {
   opacity: 0.6;
 }
 
-section, {
-  border: 1px solid #772fd3;
+section {
+  border: 1px solid #101011;
   border-radius: 20px;
-  margin-top: 36px;
-  padding: 12px;
+  margin-top: 5px;
+  padding: 20px 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.box img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .seta {
@@ -85,20 +105,16 @@ section, {
   width: 35px;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-}
-
 .moeda-nome {
   color: #777777;
   font-size: 14px;
+  text-align: center;
 }
 
-.moeda-valor .moeda-valorD {
+.moeda-valor,
+.moeda-valorD {
   color: #555555;
   font-size: 20px;
   font-weight: 700;
+  text-align: center;
 }
