@@ -15,8 +15,13 @@
   <main>
     <label>
       Converter de
-      <select>
-        <option>R$ Real Brasileiro</option>
+      <select id="currency-from">
+        <option value="real">R$ Real Brasileiro</option>
+        <option value="dolar">US$ Dólar Americano</option>
+        <option value="euro">€ Euro</option>
+        <option value="libra">£ Libra</option>
+        <option value="bitcoin">Biticoin</option>
+
       </select>
     </label>
 
@@ -26,7 +31,9 @@
         <option value="dolar">US$ Dólar Americano</option>
         <option value="euro">€ Euro</option>
         <option value="libra">£ Libra</option>
-        <option value="peso">Peso Argentino</option>
+        <option value="bitcoin">Biticoin</option>
+        <option value="real">R$ Real Brasileiro</option>
+
       </select>
     </label>
 
@@ -38,16 +45,26 @@
     <button id="convert-button">Converter</button>
 
     <section>
-      
-      
-      <img src="./assets/brasil.jpg">
+
+
+      <img id="currency-img-from" src="./assets/brasil.jpg" alt="moeda">
+      <p id="currency-name-from">Real Brasileiro</p>
       <p id="currency-value">R$ 0,00</p>
 
-      <img class="seta" src="./assets/Vector.jpg">
-      
-      <img src="./assets/estados-unidos .png">
-      <p id="currency-value-converted">$ 0.00</p>
+      <img class="seta" src="./assets/Vector.jpg" alt="seta">
+
+      <img id="currency-img" src="./assets/dolar.png" alt="moeda">
+      <p id="currency-name">Dólar Americano</p>
+      <p id="currency-value-converted">US$ 0.00</p>
+
+
+
+
+
+
     </section>
+
+
   </main>
 
   <script src="./scripit.js"></script>
